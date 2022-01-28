@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        function Animal(){
+            this.category = '动物'
+        }
+        function Dog(){
+            this.name = '汪汪'
+        }
+        let temp = new Animal();
+        Dog.prototype.__proto__ = temp;
+        let d = new Dog();
+        console.log(d);
+    </script>
+</body>
+</html>
